@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "NadajPaczke";
+}
+<h1>@ViewData["Title"]</h1>
+<form action="@Url.Action("NadajPaczke", "User")">
+    <div class="form-group">
+        <label>Imie Nadawcy</label>
+        <input type="text" class="form-control" placeholder="Wpisz Imie">
+    </div>
+    <div class="form-group">
+        <label>Nazwisko Nadawcy</label>
+        <input type="text" class="form-control" placeholder="Wpisz Nazwisko">
+    </div>
+    <div class="form-group">
+        <label>Imie Odbiorcy</label>
+        <input type="text" class="form-control" placeholder="Wpisz Imie">
+    </div>
+    <div class="form-group">
+        <label>Nazwisko Odbiorcy</label>
+        <input type="text" class="form-control" placeholder="Wpisz Nazwisko">
+    </div>
+    <div class="form-group">
+        <label for="przykladowySelect">Gdzie chcesz wysłać paczkę?</label>
+        <select class="form-control" id="przykladowySelect">
+            <option>Paczkomat 1</option>
+            <option>Paczkomat 2</option>
+            <option>Paczkomat 3</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-top:5px;">Wyślij</button>
+</form>

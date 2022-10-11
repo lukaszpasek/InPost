@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Paczkomat nr1</h1>
+    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("NadajPaczke", "Home")'">Nadaj Paczke</button>
+    <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("OdbierzPaczke", "Home")'">Odbierz Paczke</button>
+</div>
+
